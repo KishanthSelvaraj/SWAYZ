@@ -65,7 +65,7 @@ const About = () => {
               <div className="mx-auto mt-2 w-[120px] h-[2.5px] bg-customGolden rounded-full"></div>
             </div>
 
-            <div className="mt-10 overflow-hidden">
+            <div className="mt-10 overflow-hidden md:mx-5 mx-2">
               {" "}
               {/* Add overflow-hidden to prevent scroll issues */}
               <dl
@@ -78,7 +78,7 @@ const About = () => {
                       <MdOutlineSecurity className="text-customGolden text-4xl" />
                     </div>
                   </div>
-                  <div className="ml-4">
+                  <div className="md:ml-4">
                     <p className="font-heading text-lg leading-6 font-bold text-gray-700">
                       Comprehensive Security and Risk Assessment Services
                     </p>
@@ -99,7 +99,7 @@ const About = () => {
                       <GrUserExpert className="text-customGolden text-4xl" />
                     </div>
                   </div>
-                  <div className="ml-4">
+                  <div className="md:ml-4">
                     <p className="font-heading text-lg leading-6 font-bold text-gray-700">
                       Tailored Solutions and Expert Equipment Advice
                     </p>
@@ -120,7 +120,7 @@ const About = () => {
                       <FaIndustry className="text-customGolden text-4xl" />
                     </div>
                   </div>
-                  <div className="ml-4">
+                  <div className="md:ml-4">
                     <p className="font-heading text-lg leading-6 font-bold text-gray-700">
                       Security Solutions for Diverse Industries
                     </p>
@@ -141,7 +141,7 @@ const About = () => {
                       <RiVipLine className="text-customGolden text-4xl" />
                     </div>
                   </div>
-                  <div className="ml-4">
+                  <div className="md:ml-4">
                     <p className="font-heading text-lg leading-6 font-bold text-gray-700">
                       VIP and Tourist Protection Services
                     </p>
