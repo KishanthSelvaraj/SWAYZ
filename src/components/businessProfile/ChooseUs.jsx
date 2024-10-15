@@ -32,9 +32,9 @@ const timelineData = [
 
 const App = () => {
   return (
-    <div className="bg-yellow-50 p-4">
+    <div className="bg-yellow-100 p-4 lg:py-20 py-10">
       {/* Header Section */}
-      <div className="md:px-10 px-5 text-center text-customGolden md:text-3xl text-xl font-bold mb-4">
+      <div className="md:px-10 px-5 text-center text-customGolden md:text-3xl text-xl font-bold my-4">
         WHY CHOOSE US
         <div className="mx-auto mt-2 w-[120px] h-[2.5px] bg-customGolden rounded-full"></div>
       </div>

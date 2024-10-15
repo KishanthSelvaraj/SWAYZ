@@ -57,10 +57,10 @@ const About = () => {
 
   return (
     <div>
-      <section ref={sectionRef} className="">
+      <section ref={sectionRef} className="lg:py-20 py-10">
         <div className="py-12 bg-white ">
           <div className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-4">
-            <div className="md:px-10 px-5 text-center text-customGolden md:text-3xl text-xl font-bold mb-4">
+            <div className="md:px-10 px-5 text-center text-customGolden md:text-3xl text-xl font-bold mb-10">
               ABOUT SWAYZ SECURITY SERVICES
               <div className="mx-auto mt-2 w-[120px] h-[2.5px] bg-customGolden rounded-full"></div>
             </div>

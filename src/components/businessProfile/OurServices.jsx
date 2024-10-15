@@ -45,8 +45,8 @@ const OurServices = () => {
   return (
     <div>
       {/* Carousel content alternate start */}
-      <div className="bg-yellow-50 px-5">
-        <div className="container-lg container-fluid md:px-20 lg:px-30 xl:px-30 py-10">
+      <div className="bg-white px-5 lg:py-20 py-10">
+        <div className="container-lg container-fluid md:px-20 lg:px-30 xl:px-30 ">
           <div className="md:px-10 px-5 text-center text-customGolden md:text-3xl text-xl font-bold mb-4">
             OUR SERVICES
             <div className="mx-auto mt-2 w-[120px] h-[2.5px] bg-customGolden rounded-full"></div>
