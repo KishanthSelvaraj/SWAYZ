@@ -1,0 +1,16 @@
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-marquee {
+    display: inline-flex;
+    animation: marquee 15s linear infinite; /* Adjust the timing for speed */
+    /* To repeat the content smoothly, use the below property */
+    white-space: nowrap;
+  }
+  
