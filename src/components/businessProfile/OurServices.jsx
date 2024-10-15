@@ -53,15 +53,15 @@ const OurServices = () => {
           </div>
 
           {/* Description */}
-          <p className="text-customGrey text-justify font-bold text-md  my-5 lg:mx-36 mx-5">
+          <p className="text-customGrey text-center font-bold text-md  my-5 lg:mx-56 mx-5">
             We are proud to offer a range of comprehensive services to address
-            the ever-growing need for cybersecurity and protection against
-            malicious activities in the cyberspace. Our team of highly skilled
+            the ever-growing need for cybersecurity and protection against malicious activities in the cyberspace.
+            {/*  Our team of highly skilled
             professionals specializes in various areas of cybersecurity,
             including tactical response and incident management. We understand
             the challenges faced by organizations in detecting and mitigating
             threats, which is why we offer offsite monitoring and surveillance
-            system installations.
+            system installations. */}
           </p>
 
           {/* Grid layout starts here */}

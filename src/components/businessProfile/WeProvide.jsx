@@ -1,21 +1,24 @@
 import React from "react";
 import { motion } from "framer-motion";
-import infrastructure_1 from '/leanoEnergyProfile/infrastructure_1.jpeg';
+import infrastructure_1 from "/leanoEnergyProfile/infrastructure_1.jpeg";
 
 const WeProvide = () => {
   return (
     <motion.div
       className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32"
-      initial={{ opacity: 0, y: 50 }} 
-      whileInView={{ opacity: 1, y: 0 }} 
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: false }}
     >
-      <img
-        src={infrastructure_1}
-        alt=""
-        className="absolute inset-0 -z-10 h-full w-full object-cover"
-        style={{ objectPosition: "center 30%" }} 
+      {/* Fixed Background Image */}
+      <div
+        className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${infrastructure_1})`,
+          backgroundAttachment: "fixed", // Makes the background fixed
+          objectPosition: "center 30%",
+        }}
       />
       <div className="absolute inset-0 bg-black opacity-70 -z-10"></div>
       <div
@@ -45,19 +48,21 @@ const WeProvide = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-2xl font-bold tracking-tight text-white md:text-4xl">
-          WE PROVIDE BEST
-<span className="text-customGolden ml-2">HIGH-QUALITY
-SECURITY </span>SOLUTIONS
+            WE PROVIDE BEST
+            <span className="text-customGolden ml-2">
+              HIGH-QUALITY SECURITY{" "}
+            </span>
+            SOLUTIONS
           </h2>
         </div>
       </div>
 
       <div className="mx-auto mt-16 max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
-          <p className="mt-4 text-lg leading-8 text-gray-300 text-justify" >
-          We have a team of experts who can provide advice on the 
-best security equipment, alarms, safes, and other safety 
-materials to suit your specific needs
+          <p className="mt-4 text-lg leading-8 text-gray-300 text-justify">
+            We have a team of experts who can provide advice on the best
+            security equipment, alarms, safes, and other safety materials to
+            suit your specific needs
           </p>
         </div>
       </div>
