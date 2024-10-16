@@ -8,6 +8,7 @@ import LeanoEnergyProfile from './pages/leanoEnergyProfile/leanoEnergyProfile';
 import Navbar from './components/shared/NavBar';
 import BusinessProfile from './pages/businessProfile/BusinessProfile';
 import Footer from './components/cleaningServices/Footer';
+import Home from './pages/home/Home';
 
 function App() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
+      <Route path="/" element={<Home />} />
         <Route path="/cleaning-services" element={<CleaningHome />} />
         <Route path="/profile" element={<LeanoEnergyProfile />} />
         <Route path="/leano-profile" element={<SwayzConstruction />} />

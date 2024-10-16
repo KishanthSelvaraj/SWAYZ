@@ -39,7 +39,7 @@ const App = () => {
         <div className="mx-auto mt-2 w-[120px] h-[2.5px] bg-customGolden rounded-full"></div>
       </div>
       {/* Description */}
-      <p className="text-customGrey font-bold text-md text-center my-5 lg:mx-56 mx-5">
+      <p className="text-customBlack font-bold text-md text-center my-5 lg:mx-56 mx-5">
         Choosing our security company means choosing a team of highly skilled
         professionals who prioritize your safety and peace of mind above all
         else. Our company has a proven track record of providing exceptional

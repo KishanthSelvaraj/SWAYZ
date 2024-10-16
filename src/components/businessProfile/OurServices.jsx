@@ -53,7 +53,7 @@ const OurServices = () => {
           </div>
 
           {/* Description */}
-          <p className="text-customGrey text-center font-bold text-md  my-5 lg:mx-56 mx-5">
+          <p className="text-customBlack text-center font-bold text-md  my-5 lg:mx-56 mx-5">
             We are proud to offer a range of comprehensive services to address
             the ever-growing need for cybersecurity and protection against malicious activities in the cyberspace.
             {/*  Our team of highly skilled
@@ -69,7 +69,7 @@ const OurServices = () => {
             <div className="animated bg-white rounded-md shadow p-6 text-center flex flex-col items-center justify-center">
               <MdDataSaverOff className="w-16 h-16 mb-4 text-customGolden" />
               <h4 className="text-lg font-bold text-customGolden mb-2">CLOUD</h4>
-              <p className="text-customGray">
+              <p className="text-customGrey">
                 Safeguard your valuable data and applications stored on cloud platforms.
               </p>
             </div>
@@ -83,7 +83,7 @@ const OurServices = () => {
             <div className="animated bg-white rounded-md shadow p-6 text-center flex flex-col items-center justify-center">
               <GrChatOption className="w-16 h-16 mb-4 text-customGolden" />
               <h4 className="text-lg font-bold text-customGolden mb-2">ANALYTICS DATA</h4>
-              <p className="text-customGray">
+              <p className="text-customGrey">
                 Embrace data with our Analytics and Robotic Process Automation solutions.
               </p>
             </div>
@@ -97,7 +97,7 @@ const OurServices = () => {
             <div className="animated bg-white rounded-md shadow p-6 text-center flex flex-col items-center justify-center">
               <IoIosWater className="w-16 h-16 mb-4 text-customGolden" />
               <h4 className="text-lg font-bold text-customGolden mb-2">PAYMENT SOLUTIONS</h4>
-              <p className="text-customGray">
+              <p className="text-customGrey">
                 Secure and innovative solutions to simplify transactions.
               </p>
             </div>
@@ -111,7 +111,7 @@ const OurServices = () => {
             <div className="animated bg-white rounded-md shadow p-6 text-center flex flex-col items-center justify-center">
               <MdDataSaverOff className="w-16 h-16 mb-4 text-customGolden" />
               <h4 className="text-lg font-bold text-customGolden mb-2">SECURITY OPERATIONS CENTER (SOC)</h4>
-              <p className="text-customGray">
+              <p className="text-customGrey">
                 Frontline defense against cyber threats.
               </p>
             </div>
@@ -125,7 +125,7 @@ const OurServices = () => {
             <div className="animated bg-white rounded-md shadow p-6 text-center flex flex-col items-center justify-center">
               <PiMonitorFill className="w-16 h-16 mb-4 text-customGolden" />
               <h4 className="text-lg font-bold text-customGolden mb-2">SECURITY SYSTEMS</h4>
-              <p className="text-customGray">
+              <p className="text-customGrey">
                 Designing and maintaining state-of-the-art security solutions.
               </p>
             </div>
@@ -139,7 +139,7 @@ const OurServices = () => {
             <div className="animated bg-white rounded-md shadow p-6 text-center flex flex-col items-center justify-center">
               <MdDataSaverOff className="w-16 h-16 mb-4 text-customGolden" />
               <h4 className="text-lg font-bold text-customGolden mb-2">SECURITY CYBER</h4>
-              <p className="text-customGray">
+              <p className="text-customGrey">
                 Comprehensive cyber security services for today's digital landscape.
               </p>
             </div>
