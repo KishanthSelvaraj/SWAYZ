@@ -4,7 +4,7 @@ import "./BusinessProfile.css"; // Import your CSS here
 const NotFoundPage = () => {
   
   return (
-    <section className="wrapper py-80">
+    <section className="wrapper bg-gradient-to-r from-[#f8c9c9] to-[#FB8A8A] py-80">
       <div className="container">
         <div id="scene" className="scene" data-hover-only="false">
           <div className="circle" data-depth="1.2"></div>

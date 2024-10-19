@@ -258,7 +258,7 @@ nav .menu .menu_icon:hover .icon:after {
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 110vh;
   overflow-x: hidden;
 }
 .wrapper .container {
