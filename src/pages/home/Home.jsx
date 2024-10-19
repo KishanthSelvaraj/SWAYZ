@@ -15,7 +15,7 @@ const Home = () => {
       <ScrollSections/>
       <Main1/>
       <Accordion/>
-      <LeanoHomePage/>
+      {/* <LeanoHomePage/> */}
       <BusinessProfile/>
     </div>
   )
