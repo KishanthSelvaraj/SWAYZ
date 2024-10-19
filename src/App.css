@@ -1,16 +1,29 @@
-@keyframes marquee {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+/* Animation for the scrolling effect */
+.animate-scroll {
+  animation: scroll 20s linear infinite; /* Controls the speed of the scrolling */
+}
+
+/* Keyframes for the scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start position */
   }
-  
-  .animate-marquee {
-    display: inline-flex;
-    animation: marquee 15s linear infinite; /* Adjust the timing for speed */
-    /* To repeat the content smoothly, use the below property */
-    white-space: nowrap;
+  100% {
+    transform: translateX(-50%); /* End position, adjust based on content width */
   }
-  
+}
+
+/* Hover effect for the background fill */
+.group:hover .bg-customGolden {
+  scale: 1; /* This scales the background when hovering over the group */
+}
+
+/* Additional styles to prevent flickering */
+.group {
+  position: relative; /* Ensure that child elements are positioned relative to the group */
+}
+
+/* For smooth transition effects */
+.transition-colors {
+  transition: color 0.3s ease; /* Smooth color transition for hover */
+}

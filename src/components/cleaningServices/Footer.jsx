@@ -22,22 +22,22 @@ const Footer = () => {
               <div className="border p-2 rounded-full bg-customGolden">
                 <BsTelephone className="w-5 h-auto text-white" />
               </div>
-              <div className="text-sm  font-semibold text-customGrey">010 006 5983</div>
+              <div className="md:text-base text-sm  font-semibold text-customGrey">010 006 5983</div>
             </div>
             <div className="flex  items-center gap-x-5">
               <div className="border p-2 rounded-full bg-customGolden">
                 <TfiWorld className="w-5 h-auto text-white" />
               </div>
               <div>
-                <div className="text-sm  font-semibold text-customGrey">info@swayzgroup.co.za</div>
-                <div className="text-sm  font-semibold text-customGrey">www.swayzgroup.co.za</div>
+                <div className="md:text-base text-sm  font-semibold text-customGrey">info@swayzgroup.co.za</div>
+                <div className="md:text-base text-sm  font-semibold text-customGrey">www.swayzgroup.co.za</div>
               </div>
             </div>
             <div className="flex  items-center gap-x-5">
               <div className="border p-2 rounded-full bg-customGolden">
                 <ImLocation className="w-5 h-auto text-white" />
               </div>
-              <div className="text-sm  font-semibold text-customGrey">120 11th Street, Parkmore Sandton, 2196</div>
+              <div className="md:text-base text-sm  font-semibold text-customGrey">120 11th Street, Parkmore Sandton, 2196</div>
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import {
   GiWaterRecycling,
   GiOilDrum,
   GiWaterfall,
+  GiMagicBroom,
 } from "react-icons/gi";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -56,88 +57,96 @@ const PressureCleaning = () => {
     };
   }, []);
 
+  // Define the card content as an array of objects
+  const services = [
+    {
+      icon: <GiMagnifyingGlass className="text-4xl" />,
+      title: "Surface Preparation",
+      description:
+        "Before high-pressure cleaning, our team inspects the surface to assess the level of dirt and any specific areas of concern. We may pre-treat heavily soiled areas or apply environmentally friendly cleaning solutions to enhance the cleaning process.",
+    },
+    {
+      icon: <GiWaterRecycling className="text-4xl" />,
+      title: "High-Pressure Washing",
+      description:
+        "Using state-of-the-art high-pressure cleaning equipment, we apply controlled streams of water at high pressure to the surface, effectively dislodging dirt, debris, and contaminants, leaving the surface clean and refreshed.",
+    },
+    {
+      icon: <GiOilDrum className="text-4xl" />,
+      title: "Stain Removal",
+      description:
+        "High-pressure cleaning is especially effective for removing tough stains, such as oil stains, graffiti, algae, and mold. Our technicians adjust the pressure and nozzle settings to target specific stains without damaging the underlying surface.",
+    },
+    {
+      icon: <GiWaterfall className="text-4xl" />,
+      title: "Rinse and Finishing",
+      description:
+        "After high-pressure cleaning, the surface is thoroughly rinsed to remove any remaining debris and cleaning solutions. We take care to ensure that surrounding areas are protected from overspray and that water runoff is properly managed.",
+    },
+  ];
+
   return (
     <div>
-      <section ref={sectionRef} className="md:mt-16 mt-5">
-        <div className="py-12 bg-yellow-50 bg-opacity-30">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h2 className="font-heading mb-4 bg-orange-100 text-orange-800 px-4 py-2 rounded-lg inline-block text-xs font-semibold tracking-widest uppercase title-font">
-                High-Pressure Cleaning
-              </h2>
-              <p className="text-customGrey font-semibold text-sm">
-                In addition to our standard cleaning services, 
-                <span className="font-bold text-customGrey text-base"> Swayz Cleaning Services </span>
-                offers high-pressure cleaning for exterior surfaces, driveways, sidewalks, parking lots, and other areas requiring <span className="text-customBlue font-bold">deep cleaning</span> and <span className="text-customBlue font-bold">stain removal</span>. Our high-pressure cleaning equipment utilizes powerful jets of water to effectively remove dirt, grime, mold, mildew, grease, and stubborn stains.
-              </p>
+      <section ref={sectionRef} className="md:my-16 mt-5">
+        <div className="py-12 bg-gradient-to-b relative md:mx-20 mx-5 my-10 rounded-2xl from-yellow-600 via-yellow-700 to-yellow-800 text-white p-6">
+          {/* Image Background */}
+          <div
+            className=" top-0 left-0 h-[750px] absolute md:w-96 w-full bg-cover bg-center rounded-2xl opacity-30"
+            style={{ backgroundImage: "url('/cleaningImages/vector8.png')" }}
+          ></div>
+          <div className="rounded-2xl md:px-8 mt-4">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div></div>
+              <div>
+                <h2 className="font-heading mb-4 flex items-center text-white px-4 py-2 rounded-lg gap-2 text-xl md:text-3xl font-bold tracking-widest uppercase title-font">
+                  <span>
+                    <GiMagicBroom className="flex text-3xl" />
+                  </span>
+                  High-Pressure Cleaning
+                </h2>
+                <p className="text-white font-semibold text-lg md:mb-20 mb-10 ml-3">
+                  In addition to our standard cleaning services,
+                  <span className="font-bold text-base">
+                    {" "}
+                    Swayz Cleaning Services{" "}
+                  </span>
+                  offers high-pressure cleaning for exterior surfaces,
+                  driveways, sidewalks, parking lots, and other areas requiring{" "}
+                  <span className="text-customBlue font-bold">
+                    deep cleaning
+                  </span>{" "}
+                  and{" "}
+                  <span className="text-customBlue font-bold">
+                    stain removal
+                  </span>
+                  . Our high-pressure cleaning equipment utilizes powerful jets
+                  of water to effectively remove dirt, grime, mold, mildew,
+                  grease, and stubborn stains.
+                </p>
+              </div>
             </div>
-
-            <div className="mt-10 overflow-hidden"> {/* Add overflow-hidden to prevent scroll issues */}
-              <dl ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="flex items-start card">
-                  <div className="flex-shrink-0">
-                    <div className="h-16 w-16 flex justify-center rounded-full bg-primary-500">
-                      <GiMagnifyingGlass className="text-customGolden text-4xl" />
+            <div
+              ref={cardsRef}
+              className="grid lg:grid-cols-4 md:grid-cols-2 gap-6 mt-6"
+            >
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-start card border border-gray-400 rounded-2xl p-4 transition-transform transform hover:scale-105"
+                >
+                  <div className="flex items-center mb-2 text-yellow-900">
+                    <div className="h-16 w-16 flex items-center justify-center bg-yellow-600 rounded-full">
+                      {service.icon}
                     </div>
                   </div>
-                  <div className="ml-4">
-                    <p className="font-heading text-lg leading-6 font-bold text-gray-700">
-                      Surface Preparation
-                    </p>
-                    <p className="mt-2 font-semibold text-sm text-customGrey">
-                      Before high-pressure cleaning, our team inspects the surface to assess the level of dirt and any specific areas of concern. We may <span className="font-bold text-gray-700">pre-treat heavily soiled areas</span> or apply <span className="font-bold text-customBlue">environmentally friendly cleaning solutions</span> to enhance the cleaning process.
-                    </p>
-                  </div>
+                  <p className="font-heading text-xl leading-6 font-bold text-white">
+                    {service.title}
+                  </p>
+                  <p className="mt-2 font-semibold text-base text-white">
+                    {service.description}
+                  </p>
                 </div>
-
-                <div className="flex items-start card">
-                  <div className="flex-shrink-0">
-                    <div className="h-16 w-16 flex justify-center rounded-full bg-primary-500">
-                      <GiWaterRecycling className="text-customGolden text-4xl" />
-                    </div>
-                  </div>
-                  <div className="ml-4">
-                    <p className="font-heading text-lg leading-6 font-bold text-gray-700">
-                      High-Pressure Washing
-                    </p>
-                    <p className="mt-2 font-semibold  text-sm text-customGrey">
-                      Using <span className="font-bold text-gray-700">state-of-the-art high-pressure cleaning equipment</span>, we apply controlled streams of water at high pressure to the surface, effectively dislodging <span className="text-customBlue font-bold">dirt, debris, and contaminants</span>, leaving the surface clean and refreshed.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start card">
-                  <div className="flex-shrink-0">
-                    <div className="h-16 w-16 flex justify-center rounded-full bg-primary-500">
-                      <GiOilDrum className="text-customGolden text-4xl" />
-                    </div>
-                  </div>
-                  <div className="ml-4">
-                    <p className="font-heading text-lg leading-6 font-bold text-gray-700">
-                      Stain Removal
-                    </p>
-                    <p className="mt-2  font-semibold  text-sm text-customGrey">
-                      High-pressure cleaning is especially effective for removing <span className="font-bold text-gray-700">tough stains</span>, such as <span className="text-customBlue font-bold">oil stains, graffiti, algae, and mold</span>. Our technicians adjust the pressure and nozzle settings to target specific stains without damaging the underlying surface.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start card">
-                  <div className="flex-shrink-0">
-                    <div className="h-16 w-16 flex justify-center rounded-full bg-primary-500">
-                      <GiWaterfall className="text-customGolden text-4xl" />
-                    </div>
-                  </div>
-                  <div className="ml-4">
-                    <p className="font-heading text-lg leading-6 font-bold text-gray-700">
-                      Rinse and Finishing
-                    </p>
-                    <p className="mt-2  font-semibold  text-sm text-customGrey">
-                      After high-pressure cleaning, the surface is thoroughly rinsed to remove any remaining debris and cleaning solutions. We take care to ensure that <span className="font-bold text-gray-700">surrounding areas are protected</span> from overspray and that water runoff is properly managed.
-                    </p>
-                  </div>
-                </div>
-              </dl>
+              ))}
             </div>
           </div>
         </div>

@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
-import about_1 from '/leanoEnergyProfile/about_1.jpeg';
-import logo from '/leanoEnergyProfile/leanoenergylogo.png'; // Update this path to your logo
+import about_1 from "/leanoEnergyProfile/about_1.jpeg";
+import logo from "/leanoEnergyProfile/leanoenergylogo.png"; // Update this path to your logo
 
 const About = () => {
   return (
@@ -89,42 +89,47 @@ const OverlayCopy = ({ subheading, heading }) => {
       ref={targetRef}
       className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
     >
-      <img
-        src={logo}
-        alt="Company Logo"
-        className="mb-4 h-24 w-auto" 
-      />
-      <p className="mb-2 text-center text-lg md:mb-4 md:text-2xl">
+      <img src={logo} alt="Company Logo" className="mb-4 h-24 w-auto" />
+      <p className="mb-2 text-center text-md md:text-xl font-semibold text-white">
         {subheading}
       </p>
-      <p className="text-center text-3xl font-bold md:text-5xl">{heading}</p>
+      <p className="text-center text-xl md:text-3xl font-semibold text-white">
+        {heading}
+      </p>
     </motion.div>
   );
 };
 
 const ExampleContent = () => (
   <div className="mx-auto max-w-5xl px-4 pb-24 pt-12">
-    <h2 className="text-2xl font-bold md:text-4xl">ABOUT LEANO ENERGY</h2>
-    <p className="mb-4 text-lg text-neutral-600 md:text-xl mt-6">
-      It is believed that a country's future is in the hands of its youth and
-      with that said, this company opens doors to broaden that horizon. Being a
-      youth-owned company, we delight in innovative ideas, design thinking, and
-      formatting ideation that isn't the norm to business as the market is
-      constantly evolving and changing.
+    <h2 className="text-md md:text-3xl text-xl mb-3 font-bold text-black">
+      ABOUT LEANO ENERGY
+    </h2>
+    <p className="mb-4 text-md font-semibold text-customGrey md:mt-6">
+      It is believed that a countries future is in the hands of its youth and
+      with that said, this company opens doors to broaden that horizon. There is
+      still much to learn from the elders and yet so much to improve in binary
+      thinking. Being a youth owned company we delight in innovative ideas,
+      design thinking and formatting ideation that isn’t the norm to business as
+      the market is constantly evolving and changing.
     </p>
-    <p className="mb-4 text-lg text-neutral-600 md:text-xl">
-      Leano Energy is a LEVEL 1 BBBEE contributor, with the company being 100%
-      black youth-owned. We are a licensed wholesale and distributor in bulk
-      fuels, diesel, paraffin, oils, and various lubricants. The company
-      provides its products to clients in Gauteng, Mpumalanga, Limpopo, and the
-      North West province.
+    <p className="mb-4 text-md font-semibold text-customGrey">
+    Leano Energy is a LEVEL 1 BBBEE contributor, with the company being 100% 
+black youth owned it allows the company a platform to have a new outlook on 
+the market and come up with innovative and exciting ideas of not only 
+lowering cost but design comprehensive marketing .We are a licensed 
+wholesale and distributor in bulk fuels, diesel, paraffin, oils and various 
+lubricants. The company provides its products to clients in Gauteng, 
+Mpumalanga, Limpopo and the North West province. Leano Energy offers 
+energy solutions to all industries including mining, agriculture, logistics, 
+airports, factories and municipalities to ensure profitable growth.
     </p>
-    <p className="mb-8 text-lg text-neutral-600 md:text-xl">
-      We offer energy solutions to all industries, including mining,
-      agriculture, logistics, airports, factories, and municipalities to ensure
-      profitable growth. Through our fuel management service, we monitor usage
-      to ensure timely refueling, cutting costs while providing quality
-      products.
+    <p className="mb-8 text-md font-semibold text-customGrey">
+    We include fuel management service where tanks are installed on site for the 
+clients and how much fuel they use on a monthly basis is monitored and 
+ensured to always get re-fueled on time and efficiently. Through this 
+management system as well as our tailored prices are guaranteed to cut our 
+clients fuel cost while providing quality products. 
     </p>
   </div>
 );

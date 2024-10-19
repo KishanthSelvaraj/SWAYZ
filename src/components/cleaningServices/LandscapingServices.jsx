@@ -97,7 +97,7 @@ const LandscapingServices = () => {
         <div className="mx-auto mt-2 w-[120px] h-[2.5px] bg-customGolden rounded-full"></div>
       </div>
       {/* Description */}
-      <p className="text-customGrey font-bold text-sm text-center my-5 lg:mx-96 mx-5">
+      <p className="text-customGrey font-bold md:text-lg text-md text-center my-5 lg:mx-96 mx-5">
         Our Landscaping and Gardening services are designed to enhance the
         beauty and functionality of outdoor spaces, creating inviting
         environments that complement our clients properties.
@@ -105,7 +105,7 @@ const LandscapingServices = () => {
 
       <div
         ref={servicesRef}
-        className="grid md:grid-cols-2 md:px-10 px-5 lg:grid-cols-4 gap-5 mt-10 p-2"
+        className="grid md:grid-cols-2 pt-10 md:px-10 px-5 lg:grid-cols-4 gap-5 mt-10 p-2"
       >
         {/* First row with four cards */}
         {services.slice(0, 4).map((service, index) => (
@@ -116,8 +116,8 @@ const LandscapingServices = () => {
             <button className="p-2 bg-orange-50 text-customGolden rounded-[10px] cursor-default">
               {service.icon}
             </button>
-            <p className="text-lg text-[#252432] my-2.5 font-bold">{service.title}</p>
-            <p className="text-sm text-customGrey font-semibold">{service.description}</p>
+            <p className="md:text-xl text-lg text-[#252432] my-2.5 font-bold">{service.title}</p>
+            <p className="md:text-base text-sm text-customGrey font-semibold">{service.description}</p>
           </div>
         ))}
       </div>
@@ -132,8 +132,8 @@ const LandscapingServices = () => {
             <button className="p-2 bg-orange-50 text-customGolden rounded-[10px] cursor-default">
               {service.icon}
             </button>
-            <p className="text-lg font-bold text-[#252432] my-2.5">{service.title}</p>
-            <p className="text-sm text-customGrey font-semibold">{service.description}</p>
+            <p className="md:text-xl text-lg font-bold text-[#252432] my-2.5">{service.title}</p>
+            <p className="md:text-base text-sm text-customGrey font-semibold">{service.description}</p>
           </div>
         ))}
       </div>

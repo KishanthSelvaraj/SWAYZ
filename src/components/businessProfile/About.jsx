@@ -79,10 +79,10 @@ const About = () => {
                     </div>
                   </div>
                   <div className="md:ml-4">
-                    <p className="font-heading text-lg leading-6 font-bold text-gray-700">
+                    <p className="font-heading  leading-6 font-bold text-customGrey md:text-2x text-xl">
                       Comprehensive Security and Risk Assessment Services
                     </p>
-                    <p className="mt-2 font-semibold text-md md:text-sm lg:text-lg text-justify text-customGrey">
+                    <p className="mt-2 font-semibold   text-sm md:text-base text-justify text-customGrey">
                       We offer a wide range of services to meet the diverse
                       needs of our clients. In addition to providing
                       comprehensive security services, we specialize in
@@ -100,10 +100,10 @@ const About = () => {
                     </div>
                   </div>
                   <div className="md:ml-4">
-                    <p className="font-heading text-lg leading-6 font-bold text-gray-700">
+                    <p className="font-heading leading-6 font-bold text-customGrey md:text-2x text-xl">
                       Tailored Solutions and Expert Equipment Advice
                     </p>
-                    <p className="mt-2 font-semibold  text-md md:text-sm lg:text-lg text-justify text-customGrey">
+                    <p className="mt-2 font-semibold  text-sm md:text-base text-justify text-customGrey">
                       Understanding that each client has unique security
                       requirements, we conduct thorough assessments to determine
                       the most effective solutions. We also provide expert
@@ -121,10 +121,10 @@ const About = () => {
                     </div>
                   </div>
                   <div className="md:ml-4">
-                    <p className="font-heading text-lg leading-6 font-bold text-gray-700">
+                    <p className="font-heading leading-6 font-bold text-customGrey md:text-2x text-xl">
                       Security Solutions for Diverse Industries
                     </p>
-                    <p className="mt-2 text-justify font-semibold  text-md md:text-sm lg:text-lg text-customGrey">
+                    <p className="mt-2 text-justify font-semibold    text-sm md:text-base text-customGrey">
                       With our expertise and experience, we understand the
                       unique challenges faced by various industries. Shopping
                       centres, for instance, require comprehensive surveillance
@@ -142,10 +142,10 @@ const About = () => {
                     </div>
                   </div>
                   <div className="md:ml-4">
-                    <p className="font-heading text-lg leading-6 font-bold text-gray-700">
+                    <p className="font-heading leading-6 font-bold text-customGrey md:text-2x text-xl">
                       VIP and Tourist Protection Services
                     </p>
-                    <p className="mt-2 text-justify font-semibold  text-md md:text-sm lg:text-lg text-customGrey">
+                    <p className="mt-2 text-justify font-semibold    text-sm md:text-base text-customGrey">
                       We offer VIP services and close protection for
                       high-profile individuals or groups. Safety is our top
                       priority, which is why we also provide transportation and

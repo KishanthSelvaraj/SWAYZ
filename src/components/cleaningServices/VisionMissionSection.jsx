@@ -83,10 +83,10 @@ const VisionMissionSection = () => {
       {/* 2nd section */}
       <div className="bg-customGrey1">
         <div className="px-5 md:px-10 py-16">
-          <div className="font-bold uppercase md:text-2xl text-xl section-title"> {/* Added class for targeting */}
+          <div className="font-bold uppercase md:text-3xl text-xl section-title"> {/* Added class for targeting */}
             Our Goals and Values
           </div>
-          <div className="text-sm font-opensans text-[#808080] font-semibold section-description"> {/* Added class for targeting */}
+          <div className="md:text-base text-sm font-opensans text-[#808080] font-semibold section-description"> {/* Added class for targeting */}
             Committed to excellence, our vision drives us to set the standard in
             the industry, while our mission focuses on delivering quality
             services that exceed client expectations.
@@ -103,10 +103,10 @@ const VisionMissionSection = () => {
             <FcOvertime className="text-6xl text-customGolden" />
           </div>
           <div className="flex-1">
-            <h5 ref={missionTextRef} className="mb-3 text-lg text-customGolden uppercase font-bold lg:text-xl">
+            <h5 ref={missionTextRef} className="mb-3 text-lg text-customGolden uppercase font-bold lg:text-2xl">
               Our Mission
             </h5>
-            <p ref={missionDescRef} className="text-sm text-customGrey font-semibold"> {/* Added ref for description */}
+            <p ref={missionDescRef} className="md:text-base text-sm text-customGrey font-semibold"> {/* Added ref for description */}
               At Swayz Cleaning Services, our mission is to elevate the standard
               of cleanliness in every space we touch. Through professionalism,
               integrity, and attention to detail, we aim to surpass our clients’
@@ -125,10 +125,10 @@ const VisionMissionSection = () => {
             <FcPositiveDynamic className="text-5xl text-customGolden" />
           </div>
           <div className="flex-1">
-            <h5 ref={visionTextRef} className="mb-3 text-lg text-customGolden uppercase font-bold lg:text-xl">
+            <h5 ref={visionTextRef} className="mb-3 text-lg text-customGolden uppercase font-bold lg:text-2xl">
               Our Vision
             </h5>
-            <p ref={visionDescRef} className="text-sm text-customGrey font-semibold"> {/* Added ref for description */}
+            <p ref={visionDescRef} className="md:text-base text-sm text-customGrey font-semibold"> {/* Added ref for description */}
               To be the leading provider of cleaning and landscaping services,
               renowned for our commitment to excellence, sustainability, and
               customer satisfaction. We strive to continually innovate and set

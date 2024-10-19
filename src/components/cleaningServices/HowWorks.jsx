@@ -98,10 +98,10 @@ const HowWorks = () => {
     <section className="bg-customGrey1 py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <p className="font-heading mb-4 bg-orange-100 text-orange-800 px-4 py-2 rounded-lg inline-block text-xs font-semibold tracking-widest uppercase title-font">
+          <p className="font-heading mb-4 bg-orange-100 text-orange-800 px-4 py-2 rounded-lg inline-block text-sm font-semibold tracking-widest uppercase title-font">
             How It Works - The Process
           </p>
-          <p className="mx-auto mt-4 max-w-5xl text-sm font-semibold text-customGrey">
+          <p className="mx-auto mt-4 max-w-5xl md:text-lg text-md  font-semibold text-customGrey">
             At Swayz Cleaning Services, our cleaning process is designed to
             deliver exceptional results while prioritizing the health and
             well-being of our clients and the environment. We are committed to
@@ -124,10 +124,10 @@ const HowWorks = () => {
                 {item.icon}
               </div>
               <div className="ml-6 lg:ml-0 lg:mt-10">
-                <h3 className="text-xl font-bold text-customBlack before:mb-2 before:block before:font-mono before:text-sm before:text-gray-500">
+                <h3 className="md:text-2xl text-xl font-bold text-customBlack before:mb-2 before:block before:font-mono before:text-sm before:text-gray-500">
                   {item.title}
                 </h3>
-                <h4 className="mt-2 text-sm font-semibold text-customGrey">
+                <h4 className="mt-2 md:text-base   text-sm font-semibold text-customGrey">
                   <span className="font-semibold opacity-90 text-customGrey">{item.description.split(":")[0]}:</span>
                   {item.description.split(":")[1]}
                 </h4>

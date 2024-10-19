@@ -8,8 +8,12 @@ const SwayzFooter = () => {
   return (
     <div>
       <div>
-        <div className="flex justify-center my-10 md:text-3xl font-bold text-xl">Get in Touch</div>
-        <div className='flex flex-col md:flex-row justify-center md:justify-evenly gap-y-10 text-sm items-center'>
+        {/* <div className="flex justify-center my-10 md:text-3xl font-bold text-xl">Get in Touch</div> */}
+        <div className="md:px-10 px-5 text-center text-customGolden md:text-3xl text-xl font-bold">
+            GET IN TOUCH
+            <div className="mx-auto mt-2 w-[120px] h-[2.5px] bg-customGolden rounded-full"></div>
+          </div>
+        <div className='flex flex-col md:flex-row mt-10 justify-center md:justify-evenly gap-y-10 text-sm items-center'>
             <div>
                 <img src={logo} alt="" className='w-20 md:w-40' />
             </div>

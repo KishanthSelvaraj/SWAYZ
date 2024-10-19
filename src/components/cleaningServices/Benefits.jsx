@@ -11,11 +11,11 @@ const Benefits = () => {
           <div className="relative p-6 bg-white  border-2 border-customGolden rounded-lg hover:scale-105 transition duration-500">
             <div className="flex items-center">
               <FaBolt className="text-customGolden text-2xl" />
-              <h3 className="my-2 ml-3 text-lg font-bold text-gray-800 ">
+              <h3 className="my-2 ml-3 md:text-xl text-lg font-bold text-gray-800 ">
                 Efficiency
               </h3>
             </div>
-            <p className="text-customGrey font-semibold text-sm">
+            <p className="text-customGrey font-semibold md:text-base  text-sm">
               High-pressure cleaning offers quick and efficient cleaning of
               large surface areas, saving time and labor costs compared to
               traditional cleaning methods.
@@ -29,11 +29,11 @@ const Benefits = () => {
           <div className="relative p-6 bg-white  border-2 border-customGolden rounded-lg hover:scale-105 transition duration-500">
             <div className="flex items-center">
               <FaEye className="text-customGolden text-2xl" />
-              <h3 className="my-2 ml-3 text-lg font-bold text-gray-800 ">
+              <h3 className="my-2 ml-3 md:text-xl text-lg font-bold text-gray-800 ">
                 Enhanced Curb Appeal
               </h3>
             </div>
-            <p className="text-customGrey font-semibold text-sm">
+            <p className="text-customGrey font-semibold md:text-base text-sm text-sm">
               High-pressure cleaning revitalizes exterior surfaces, removing
               dirt, stains and grime to enhance the appearance and curb appeal
               of properties.
@@ -47,13 +47,13 @@ const Benefits = () => {
           <div className="relative p-6 bg-white  border-2 border-customGolden rounded-lg hover:scale-105 transition duration-500">
             <div className="flex items-center">
               <FaRecycle className="text-customGolden text-2xl" />
-              <h3 className="my-2 ml-3 text-lg font-bold text-gray-800 ">
+              <h3 className="my-2 ml-3 md:text-xl text-lg font-bold text-gray-800 ">
                 Versatility
               </h3>
             </div>
-            <p className="text-customGrey font-semibold text-sm">
+            <p className="text-customGrey font-semibold md:text-base text-sm">
               Our high-pressure cleaning equipment can be used on a variety of
-              surfaces, including concrete, stone, and more, making it suitable
+              surfaces, including concrete, and more, making it suitable
               for a wide range of cleaning applications.
             </p>
           </div>
@@ -65,11 +65,11 @@ const Benefits = () => {
           <div className="relative p-6 bg-white  border-2 border-customGolden rounded-lg hover:scale-105 transition duration-500">
             <div className="flex items-center">
               <FaLeaf className="text-customGolden text-2xl" />
-              <h3 className="my-2 ml-3 text-lg font-bold text-gray-800 ">
+              <h3 className="my-2 ml-3 md:text-xl text-lg font-bold text-gray-800 ">
                 Environmentally Friendly
               </h3>
             </div>
-            <p className="text-customGrey font-semibold text-sm">
+            <p className="text-customGrey font-semibold md:text-base text-sm">
               Our high- pressure cleaning process uses only water and
               eco-friendly cleaning solutions, minimizing the use of harsh
               chemicals and reducing environmental impact.

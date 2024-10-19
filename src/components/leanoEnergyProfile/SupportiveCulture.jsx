@@ -36,8 +36,9 @@ const SupportiveCulture = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6">
-      <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center text-black">SUPPORTIVE CULTURE</h2>
+<div className="bg-customGrey2">
+<div className="max-w-2xl mx-auto p-6">
+      <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center text-customBlack">SUPPORTIVE CULTURE</h2>
 
       {contents.map((item, index) => {
         const ref = useRef(null);
@@ -47,27 +48,26 @@ const SupportiveCulture = () => {
           <motion.div
             ref={ref}
             key={index}
-            className="relative mt-6 flex flex-col rounded-xl bg-white text-black shadow-md overflow-hidden"
+            className="relative mt-6 flex flex-col rounded-xl bg-customGrey1 text-black shadow-md overflow-hidden"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }} 
             transition={{ duration: 0.5 }} 
           >
             <div className="p-6">
-              <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal">
+              <h5 className="mb-2 block font-sans md:text-2xl text-xl font-semibold leading-snug tracking-normal text-customGolden">
                 {item.title}
               </h5>
-              <p className="block font-sans text-base font-light leading-relaxed">
+              <p className="block font-sans font-semibold text-base leading-relaxed text-customGrey">
                 {item.content}
               </p>
-              <p className="mt-2 text-gray-500">... (Read more)</p>
             </div>
             <div className="p-6 pt-0">
               <button
-                className="flex select-none items-center gap-2 rounded-lg py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-black transition-all hover:bg-gray-200 active:bg-gray-300"
+                className="flex select-none items-center gap-2 rounded-lg py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white bg-customGolden transition-all hover:bg-[#ca9145] "
                 type="button"
                 onClick={() => handleLearnMore(item.content)} 
               >
-                Learn More
+                Read More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -104,7 +104,7 @@ const SupportiveCulture = () => {
             exit={{ scale: 0.8 }}
             transition={{ duration: 0.3 }}
           >
-            <h3 className="text-xl font-bold mb-4">More Information</h3>
+            <h3 className="text-xl font-bold mb-4 text-customBlack">More Information</h3>
             <p>{selectedContent}</p>
             <button
               className="mt-4 rounded-lg bg-red-500 text-white px-4 py-2"
@@ -116,6 +116,7 @@ const SupportiveCulture = () => {
         </motion.div>
       )}
     </div>
+</div>
   );
 };
 

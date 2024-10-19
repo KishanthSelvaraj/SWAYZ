@@ -72,7 +72,7 @@ const TrainingAffiliations = () => {
                 TRAINING & AFFILIATIONS
               </h2>
             </div>
-            <p className="text-sm font-semibold text-white mb-6">
+            <p className="md:text-base text-sm font-semibold text-white mb-6">
               Swayz Cleaning Services is proud to be fully accredited by the
               Services SETA (Sector Education and Training Authority). This
               accreditation is a testament to our commitment to maintaining the
@@ -83,7 +83,7 @@ const TrainingAffiliations = () => {
               <h3 className="font-bold text-lg text-yellow-500">
                 Services SETA Accreditation:
               </h3>
-              <p className="text-sm font-semibold text-white">
+              <p className="md:text-base text-sm font-semibold text-white">
                 Accreditation by Services SETA demonstrates our compliance with
                 industry standards and regulatory requirements, ensuring that
                 our training programs meet the rigorous criteria set forth by
@@ -138,17 +138,17 @@ const TrainingAffiliations = () => {
             we believe in the importance of continuous learning and professional
             development.
           </h3>
-          <p className="text-sm font-semibold text-customGrey mb-6">
+          <p className="md:text-base text-sm font-semibold text-customGrey mb-6">
             Our internal training department is dedicated to providing
             comprehensive training programs for our staff, ensuring they have
             the knowledge and skills necessary to deliver exceptional service.
           </p>
-          <div className="space-y-6">
+          <div className="space-y-8">
             <div className="flex gap-4">
               <IoMdSchool className="text-customGolden text-3xl shrink-0" />
               <div>
-                <h4 className="font-bold">Employee Training Programs:</h4>
-                <p className="text-sm font-semibold text-justify text-customGrey">
+                <h4 className="text-lg font-bold">Employee Training Programs:</h4>
+                <p className="md:text-base text-sm font-semibold text-justify text-customGrey">
                   We offer a range of training programs tailored to the needs of
                   our cleaning and landscaping teams. These programs cover
                   various aspects of cleaning techniques, equipment operation,
@@ -160,8 +160,8 @@ const TrainingAffiliations = () => {
             <div className="flex gap-4">
               <MdUpdate className="text-customGolden text-3xl shrink-0" />
               <div>
-                <h4 className="font-bold">Ongoing Development:</h4>
-                <p className="text-sm font-semibold text-justify text-customGrey">
+                <h4 className="text-lg font-bold">Ongoing Development:</h4>
+                <p className="md:text-base text-sm font-semibold text-justify text-customGrey">
                   Our commitment to ongoing development means that our staff
                   members receive regular training updates to stay abreast of
                   industry best practices, technological advancements, and
@@ -172,8 +172,8 @@ const TrainingAffiliations = () => {
             <div className="flex gap-4">
               <AiFillSafetyCertificate className="text-customGolden text-3xl shrink-0" />
               <div>
-                <h4 className="font-bold">Certification:</h4>
-                <p className="text-sm font-semibold text-justify text-customGrey">
+                <h4 className="text-lg font-bold">Certification:</h4>
+                <p className="md:text-base text-sm font-semibold text-justify text-customGrey">
                   Upon successful completion of our training programs, employees
                   receive certifications that validate their expertise and
                   competence in their respective roles. These certifications

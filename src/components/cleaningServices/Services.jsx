@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi"; // For carousel navigation
+import React, { useState, useEffect } from "react";
+import { FiChevronLeft, FiChevronRight, FiInfo } from "react-icons/fi"; // Import FiInfo for hover icon
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState(1);
-  const [currentIndex, setCurrentIndex] = useState(0); // To handle carousel scrolling
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const tabs = [
     { id: 1, title: "Commercial Cleaning" },
@@ -124,7 +124,6 @@ const Services = () => {
 
   const [visibleItems, setVisibleItems] = useState(itemsPerView());
 
-  // Update visible items on resize
   useEffect(() => {
     const handleResize = () => setVisibleItems(itemsPerView());
     window.addEventListener("resize", handleResize);
@@ -141,93 +140,65 @@ const Services = () => {
     );
   };
 
-  // Determine if the buttons should be disabled
   const isPrevDisabled = currentIndex === 0;
   const isNextDisabled =
     currentIndex >= content[activeTab].length - visibleItems;
 
   return (
-    <div className="md:my-10 my-5">
-      {/* Section Heading */}
-      <div className="md:px-10 px-5 text-center text-customGolden md:text-3xl text-xl font-bold">
-        OUR SERVICES
-        <div className="mx-auto mt-2 w-[120px] h-[2.5px] bg-customGolden rounded-full"></div>
-      </div>
-
-      {/* Description */}
-      <p className="text-customGrey font-bold text-sm text-center my-5 lg:mx-96 mx-5">
-        Our specialized services are tailored to address specific cleaning
-        needs, providing comprehensive solutions for both commercial and
-        residential clients.
-      </p>
-
+    <div className=" my-5">
       <div
-        className="flex flex-col lg:flex-row justify-between -z-0 relative bg-cover bg-black bg-opacity-10 bg-center md:px-10 px-5 py-20 mt-10" // Adjusted opacity here
+        className="flex flex-col -z-0 relative bg-cover bg-black bg-opacity-10 bg-center md:px-10 px-5 py-20 mt-10"
         style={{
-          backgroundImage: "url('/cleaningImages/Banner.jpg')", // Replace with your image path
-          backgroundSize: "cover", // Ensure the background image covers the entire div
+          backgroundImage: "url('/cleaningImages/Banner.jpg')",
+          backgroundSize: "cover",
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-60"></div> {/* Adjust opacity here */}
-
-        <div className="flex justify-center lg:justify-start z-50 items-center mb-4 md:mb-0">
-          <p className="lg:text-xl md:text-xl text-lg font-semibold text-white text-center md:text-left">
-            Tailored{" "}
-            <span className="text-customGolden">Cleaning Schedules</span> to
-            suit client-specific requirements.
-          </p>
-        </div>
-
-        {/* Buttons Container */}
-        <div className="flex flex-wrap  gap-3 z-50 lg:py-0 py-5 justify-center lg:justify-end ">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => {
-                setActiveTab(tab.id);
-                setCurrentIndex(0); // Reset carousel index on tab change
-                // window.location.reload();
-              }}
-              className={`py-2 px-4 font-semibold text-sm transition duration-300 rounded-lg ${
-                activeTab === tab.id
-                  ? "bg-customGolden text-white"
-                  : "text-white border border-customGolden hover:bg-yellow-50 hover:text-black"
-              }`}
-            >
-              {tab.title}
-            </button>
-          ))}
+        <div className="absolute inset-0 bg-black opacity-60"></div>
+        <div className="z-50 items-center mb-4 md:mb-0">
+          <div className="md:px-10 px-5 text-center text-customGolden md:text-3xl text-xl font-bold">
+            OUR SERVICES
+            <div className="mx-auto mt-2 w-[120px] h-[2.5px] bg-customGolden rounded-full"></div>
+          </div>
+          <div className="my-5">
+            <p className="md:text-lg text-md font-semibold text-white text-center">
+              Tailored <span>Cleaning Schedules</span> to suit client-specific
+              requirements.
+            </p>
+            <p className="md:text-lg text-md font-semibold text-white text-center">
+              Our specialized services are tailored to address specific cleaning
+              needs, providing comprehensive solutions for both commercial and
+              residential clients.
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* Carousel navigation buttons */}
-      {content[activeTab].length > visibleItems && (
-        <div className="md:mx-16 flex justify-end pt-10 mx-5">
-          <button
-            onClick={handlePrev}
-            disabled={isPrevDisabled}
-            className={`bg-customGolden p-2 text-white me-2 rounded-full shadow-lg ${
-              isPrevDisabled ? "opacity-50 cursor-not-allowed" : ""
-            }`}
-          >
-            <FiChevronLeft size={24} />
-          </button>
-          <button
-            onClick={handleNext}
-            disabled={isNextDisabled}
-            className={`bg-customGolden p-2 text-white rounded-full shadow-lg ${
-              isNextDisabled ? "opacity-50 cursor-not-allowed" : ""
-            }`}
-          >
-            <FiChevronRight size={24} />
-          </button>
+      <div className="md:mx-16 mt-10 mb-2">
+        <div className="flex flex-wrap md:justify-center justify-end items-center py-5">
+          <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+            {tabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => {
+                  setActiveTab(tab.id);
+                  setCurrentIndex(0);
+                }}
+                className={`py-2 px-4 font-semibold md:text-lg text-md transition duration-300 rounded-lg ${
+                  activeTab === tab.id
+                    ? " text-customGolden"
+                    : "text-black hover:text-customGolden"
+                }`}
+              >
+                {tab.title}
+              </button>
+            ))}
+          </div>
         </div>
-      )}
+      </div>
 
-      {/* Cards Carousel */}
-      <div className="relative mt-10 md:mx-10 mx-5">
+      <div className="relative  md:mx-10 mx-5">
         <div
-          className="grid gap-5 md:px-5 transition-transform duration-500 ease-in-out"
+          className="grid gap-5 md:px-5  transition-transform duration-500 ease-in-out"
           style={{
             gridTemplateColumns: `repeat(${visibleItems}, minmax(0, 1fr))`,
           }}
@@ -255,13 +226,40 @@ const Services = () => {
                   {item.title}
                 </h3>
 
-                {/* Hover effect to display description */}
-                <div className="absolute inset-0 bg-black bg-opacity-75 opacity-0 group-hover:opacity-100 transition duration-500 flex justify-center items-center">
-                  <p className="text-white p-4">{item.description}</p>
+                {/* Hover effect with centered description and icon */}
+                <div className="absolute inset-0 bg-black bg-opacity-75 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center text-center">
+                  <p className="text-white p-4 flex flex-col items-center justify-center">
+                    <FiInfo className="mr-2" size={40 } /> {/* Icon added */}
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
         </div>
+
+        {/* Carousel Navigation Buttons */}
+        {content[activeTab].length > visibleItems && (
+          <div className="flex justify-end  items-center pt-10 md:px-0 px-5 md:pt-0">
+            <button
+              onClick={handlePrev}
+              disabled={isPrevDisabled}
+              className={`bg-customGolden p-2 top-1/2 -mt-3 absolute left-0 text-white me-2 rounded-full shadow-lg ${
+                isPrevDisabled ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+            >
+              <FiChevronLeft size={24} />
+            </button>
+            <button
+              onClick={handleNext}
+              disabled={isNextDisabled}
+              className={`bg-customGolden p-2 top-1/2 -mt-3 absolute right-0 text-white rounded-full shadow-lg ${
+                isNextDisabled ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+            >
+              <FiChevronRight size={24} />
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

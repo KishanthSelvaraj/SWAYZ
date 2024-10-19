@@ -51,6 +51,19 @@ const OurMisson = () => {
   
   return (
     <div className="relative ">
+      {/* SVG for the curved background */}
+      <div className="absolute top-0 left-0 w-full overflow-hidden">
+        <svg
+          className="w-full"
+          viewBox="0 0 1440 320"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#e5f0e5" // Adjust this to match your desired background color
+            d="M0,160L60,165.3C120,171,240,181,360,192C480,203,600,213,720,202.7C840,192,960,160,1080,160C1200,160,1320,192,1380,208L1440,224V320H1380C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320H0V160Z"
+          />
+        </svg>
+      </div>
 
       <div ref={sectionRef} className="relative w-full bg-yellow-100 p-8 z-10 lg:py-20 py-10">
         <div className="animated md:px-10 px-5 text-center text-customGolden md:text-3xl text-xl font-bold my-4">
@@ -59,7 +72,7 @@ const OurMisson = () => {
         </div>
 
         {/* Description */}
-        <p className="text-customBlack  font-bold text-md text-center my-5 lg:mx-56 mx-5 animated">
+        <p className="text-customBlack font-bold text-sm md:text-lg text-center my-5 lg:mx-56 mx-5 animated">
           At Swayz Security Services our mission is to strive towards perfection
           and be recognized as the leader in providing comprehensive security
           solutions.
